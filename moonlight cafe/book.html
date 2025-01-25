@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING TABLE</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(bkk.jpg) no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Dark overlay for the background */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            opacity: 0.8; /* Apply opacity to the background image */
+        }
+
+        /* Header */
+        .head {
+            font-family: "lucida handwriting";
+            font-size: 3em;
+            color: #190c03;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-family: serif;
+            font-size: 1.5em;
+            color: #5d210b;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 300px;
+            height:200px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 1px solid #260303;
+            margin: 20px 0;
+        }
+
+        /* Form styling */
+        table {
+            margin: 0 auto;
+        }
+
+        td {
+            font-family: "lucida handwriting";
+            font-size: 1.2em;
+            color: #24160c;
+            padding: 10px;
+        }
+
+        input, select {
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid #341804;
+            font-size: 1em;
+            width: 100%;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #673131;
+            color: white;
+            cursor: pointer;
+            border: none;
+            width: 60%;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #341804;
+        }
+
+        /* Footer */
+        .footer-info {
+            font-size: 1.2em;
+            color: #383636;
+        }
+
+        .footer {
+            font-family: "lucida handwriting";
+            font-size: 2em;
+            color: #341804;
+        }
+
+        /* Links */
+        .footer-links a {
+            font-size: 1.2em;
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 15px 30px;
+            border-radius: 8px;
+            background-color: #673131;
+            transition: background-color 0.3s ease;
+            border: 2px solid #333;
+        }
+
+        .footer-links a:hover {
+            background-color:#341804;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">MOON LIGHT CAFE</h1>
+        <h3>Book your seat now and enjoy a unique café experience!</h3>
+        <img src="img3.jpeg" alt="Cafe Image">
+        <div class="footer-links">
+            <a href="menu.html">EXPLORE OUR MENU</a>
+            <a href="moonlight.html">HOME</a>
+        </div>
+
+        <hr>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td>Age :</td>
+                    <td><input type="number" placeholder="Enter your age" max="90" min="18"></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>No. of seats :</td>
+                    <td><input type="number" max="5" min="1" placeholder="Select total seats"></td>
+                </tr>
+                <tr>
+                    <td>Phone number :</td>
+                    <td><input type="number" placeholder="Enter your number"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Book Now!"></td>
+                </tr>
+            </table>
+        </form>
+
+        <hr>
+
+        <h4 class="footer">VISIT US AT</h4>
+        <p class="footer-info">NO 63, EAST LAKE ROAD, R.S.PURAM</p>
+        <p class="footer-info">COIMBATORE - 641 002</p>
+        <p class="footer-info">+91 97903 85662 | +91 7200872917</p>
+        
+    </div>
+</body>
+</html>
